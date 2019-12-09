@@ -70,7 +70,7 @@
     {% endfor %}
 
 
-    <!-- Post                            -->
+    <!-- Post -->
 
   </div>
 </section>
@@ -97,8 +97,7 @@
     <div class="row">
       {% for obj in latest %}
       <div class="post col-md-4">
-        <div class="post-thumbnail"><a href="#"><img src="{{ obj.thumbnail.url }}" alt="..."
-              class="img-fluid"></a>
+        <div class="post-thumbnail"><a href="#"><img src="{{ obj.thumbnail.url }}" alt="..." class="img-fluid"></a>
         </div>
         <div class="post-details">
           <div class="post-meta d-flex justify-content-between">
@@ -129,9 +128,9 @@
       </div>
       <div class="col-md-8">
         <div class="form-holder">
-          <form action="." method="POST"> 
-             <!-- the . represents current url we are on -->
-             {% csrf_token %}
+          <form action="." method="POST">
+            <!-- the . represents current url we are on -->
+            {% csrf_token %}
             <div class="form-group">
               <input type="email" name="email" id="email" placeholder="Type your email address">
               <button type="submit" class="submit">Subscribe</button>
